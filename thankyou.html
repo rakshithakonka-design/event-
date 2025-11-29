@@ -1,0 +1,72 @@
+<html>
+<head>
+  <title>Thank You</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color:rgba(2, 2, 92, 0.806);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .thankyou-box {
+      background-color: whitesmoke;
+      border: 8px solid gold;
+      border-radius: 12px;
+      padding: 30px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      text-align: center;
+      max-width: 400px;
+      animation: bounceIn 1.5s ease; }
+    
+    h2 {
+      color: black;
+      margin-bottom: 15px;
+      animation: glow 2s infinite alternate; 
+    }
+    p {
+      font-size: 18px;
+      color: black;
+    }
+    a {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: darkblue;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      transition: transform 0.3s ease;
+    }
+    a:hover { 
+      background-color: gold; 
+      color: black; 
+      transform: scale(1.1); 
+    }
+
+    
+    @keyframes bounceIn {
+      0% { transform: scale(0.5); opacity: 0; }
+      60% { transform: scale(1.2); opacity: 1; }
+      80% { transform: scale(0.9); }
+      100% { transform: scale(1); }
+    }
+
+    
+    @keyframes glow {
+      from { text-shadow: 0 0 10px gold, 0 0 20px orange; }
+      to { text-shadow: 0 0 20px white, 0 0 30px gold; }
+    }
+    
+  </style>
+</head>
+<body>
+  <div class="thankyou-box">
+    <h2>🎉 Thank You for Registering! 🎉</h2>
+    <p>We look forward to seeing you at the Diwali Celebration Night!</p>
+    <a href="di.html">Back to events</a>
+  </div>
+</body>
+</html>
